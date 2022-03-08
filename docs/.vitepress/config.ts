@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Help and Remind',
   description: 'Helpers and reminders on a VitePress application',
   lang: 'fr-FR',
+  base: '/VitePress-Docs/',
   themeConfig: {
     nav: getNavigationRoutes(),
     sidebar: {
