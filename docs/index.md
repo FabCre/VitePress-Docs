@@ -23,13 +23,13 @@
 
 Liste des [emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json) utilisables.
 
-### Tip et détails conteneurs
-
-[Tip et détails](https://vitepress.vuejs.org/guide/markdown.html#custom-containers)
-
 ### Block code
 
 ```js{2}
 console.log('Jest, Jasmine pour le test unitaires');
 // with Highlight
 ```
+
+### Tip et détails conteneurs
+
+[Tip et détails](https://vitepress.vuejs.org/guide/markdown.html#custom-containers)
