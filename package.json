@@ -1,0 +1,17 @@
+{
+  "name": "vitepress-docs",
+  "version": "1.0.0",
+  "description": "Help and remind generated with vite press",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "author": "FabCre",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "vitepress": "^0.22.3"
+  }
+}
