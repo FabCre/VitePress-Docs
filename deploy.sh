@@ -1,25 +1,25 @@
 #!/usr/bin/env sh
-echo "$1"
+echo "origin: $1"
 
 # abort on errors
-# set -e
+set -e
 
 pnpm run clean:dist
-pnpm run docs:build
-cd docs/.vitepress/dist || exit
+cd docs/.vitepress/ || exit
+mkdir dist
+cd dist || exit
 git init
-git remote add origin https://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@github.com/FabCre/VitePress-Docs.git
+git remote add origin https://"$1"
 git fetch --all
-echo "Fetched"
 sleep 5
-echo "Return"
-git add -A
-git switch gh-pages
-sleep 5
+git checkout gh-pages
+pnpm run docs:build
+sleep 10
+git status
+git add .
+git status
 git commit -m 'deploy'
-git status
-echo "Checkout gh-pages"
-git status
-git push -f
+sleep 5
+git push --force
 echo "Pushed on github"
 $SHELL
