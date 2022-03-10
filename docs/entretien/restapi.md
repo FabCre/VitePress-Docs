@@ -1,0 +1,10 @@
+- REST (json) vs SOAP (xml verbeux)
+- Quel protocole réseau utilise-t-on ?
+- Expliquez en quelques mots le protocol HTTP/HTTPS (unidirectionnel) ?
+- Citer les verbes ou methods lors d'un call sur une api REST (POST, DELETE, PUT, PATCH, GET, OPTIONS...) ?
+- Comment définir proprement un endpoint REST ?
+- Verbe GET cache control dans le header ?
+- Verbe OPTIONS, à quoi sert-il ? (par exemple CORS, cross domain problématique)
+- PATCH vs PUT ?
+- Est-ce que l'on peut faire une demande de ressources via un POST au lieu d'un GET ?
+    - Dans quel cas cela peut-il être utile (request trop longue dans la query par exemple) ?

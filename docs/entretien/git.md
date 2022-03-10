@@ -1,0 +1,5 @@
+- Comment versionner son code ?
+- Qu'est-ce que Git et comment cela s'utilise ? (local et remote via GitHub, GitLab, etc.)
+- Qu'est-ce que git flow, trunk base development ?
+- Expliquer la commande git Merge vs Rebase ?
+- Qu'est-ce qu'un rebase interactive ?

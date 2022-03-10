@@ -1,0 +1,14 @@
+- Qu'est-ce qu'EcmaScript ?
+- Fail Fast ? &&
+- Quelle version de JS/Ecma utilisez-vous ?
+    - Apport de ES6 / ES2015 : class, module, arrow function, spread, array map, filter, reduce, const & let...
+- Quelles différences entre "var" et "let, const" ?
+- Quelles différences entre "function" et "arrow function" ?
+- Qu'est-ce que l'optional chaining ?
+- Qu'est-ce que le null coalescing ?
+- Qu'est-ce qu'une fonction pure ?
+    - Quel est son intérêt ?
+- Qu'est-ce qu'une High Order Function ?
+- Qu'est-ce qu'une "Promise" ?
+    - À quoi serve les mots clefs "async await" ?
+- Qu'est-ce qu'un middleware ? 

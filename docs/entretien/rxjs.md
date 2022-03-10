@@ -1,0 +1,6 @@
+- Qu'est-ce que la programmation réactive/évènementielle (implementation de la spec ReactiveX) ?
+- Qu'est-ce qu'un Observable (design pattern) ? 
+- Avec React, redux observable permet l'utilisation de rxjs avec les epics, il existe également Redux Saga pour exécuter du code asynchrone.
+- Avec Angular, le framework repose en grande partie sur les observables et la librairie Rxjs.
+- Qu'est-ce que l'operator Pipe (compose...) ?
+- Citez quelques operator Rxjs et expliquer un cas d'utilisation (map, filter, merge, mergeMap, delay, skip vs first). 

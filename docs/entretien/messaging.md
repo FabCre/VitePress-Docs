@@ -1,0 +1,3 @@
+- Comment fait-on pour communiquer depuis le serveur vers le client (WebSocket) ?
+- Quelle est son utilité ? (exemple d'utilisation dans un chat, lecture de streaming...)
+- Quelle technos de messaging connaissez vous ? (MQTT, SignalR, Socket.io, Tibco, IUM, RabbitMQ)

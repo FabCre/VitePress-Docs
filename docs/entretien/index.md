@@ -14,54 +14,24 @@ Ne pas omettre les questions de veille et connaissance générale informatique.
 
 #### [Test](test)
 
-## JavaScript
+#### [JavaScript](javascript)
 
-- Qu'est-ce qu'EcmaScript ?
-- Fail Fast ? &&
-- Quelle version de JS/Ecma utilisez-vous ?
-    - Apport de ES6 / ES2015 : class, module, arrow function, spread, array map, filter, reduce, const & let
-- Quelles différences entre "var" et "let, const" ?
-- Quelles différences entre "function" et "arrow function" ?
-- Qu'est-ce que l'optional chaining ?
-- Qu'est-ce que le null coalescing ?
-- Qu'est-ce qu'une fonction pure ?
-    - Quel est son intérêt ?
-- Qu'est-ce qu'une High Order Function ?
+#### [TypeScript](typescript)
 
-## TypeScript
+#### [React](react)
 
-- Quel est l'apport de TypeScript ?
-- Quelle est la différence entre un type et une interface ?
-- Quelle est la différence entre une interface et une classe après "transpilation" de typescript en javascript ?
-- Qu'est-ce qu'un "intersection type", "union type" et son utilité ?
-- Qu'est-ce que le type "any" et pourquoi le proscrire au maximum ? 
-- Quelle est la différence entre le "any" et "unknown" ?
-- Qu'est-ce que le type "never", "void", "Omit", "Pick", "Mapped Type"  ?
-- Qu'est-ce qu'un décorateur ? Est ce présent en JS ?
-- Quelle est la différence entre une Promise et un Observable ?
-    - Est-ce que l'observable est disponible en JS ? (oui via Rxjs) 
+#### [Angular](angular)
 
-## React
+#### [Rxjs](rxjs)
 
-## Angular
+#### [REST api](restapi)
 
-## Rxjs
+#### [Messaging](messaging)
 
-## Api REST
+#### [.NET](dotnet.md)
 
-## Messaging
+#### [Git](git)
 
-## DotNet
+#### [CI/CD](cicd)
 
-## Git
-
-## CI/CD
-
-## Clean Code / CraftsmanShip
-
-## Veille Techno
-
-## Générale informatique
-
-- complexité
-- SOLID
+#### [Bonnes Pratiques](bonnespratiques)

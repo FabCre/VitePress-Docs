@@ -39,8 +39,19 @@ function getEntretienSidebarLinks() {
   return [
     {
       text: 'Sujets',
+      link: '/entretien/',
       children: [
         { text: 'Test', link: '/entretien/test' },
+        { text: 'JavaScript', link: '/entretien/javascript' },
+        { text: 'TypeScript', link: '/entretien/typescript' },
+        { text: 'ReactJS', link: '/entretien/react' },
+        { text: 'Angular', link: '/entretien/angular' },
+        { text: 'Rxjs', link: '/entretien/rxjs' },
+        { text: 'Api REST', link: '/entretien/restapi' },
+        { text: 'Messaging', link: '/entretien/messaging' },
+        { text: 'Git', link: '/entretien/git' },
+        { text: 'CI/CD', link: '/entretien/cicd' },
+        { text: 'Bonnes Pratiques', link: '/entretien/bonnespratiques' },
       ],
     },
   ];
