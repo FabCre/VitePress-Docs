@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as i,a as t}from"./app.ae3d89a7.js";const f='{"title":"ANSSI","description":"","frontmatter":{},"headers":[{"level":2,"title":"MOOC","slug":"mooc"}],"relativePath":"cybersec/index.md"}',r={},n=t("",4),s=[n];function o(c,d,h,_,l,u){return i(),a("div",null,s)}var p=e(r,[["render",o]]);export{f as __pageData,p as default};
