@@ -1,4 +1,4 @@
-## DotNEt
+## .NET
 
 - Quelle version de .NET utilisez-vous ?
 - Qu'est-ce que l'injection de dépendances en dotnet ?
@@ -11,6 +11,14 @@
 - Qu'est-ce qu'une méthode d'extension ?
 - Qu'est-ce qu'une Lamda expression ?
 - Qu'est-ce que le boxing/unboxing ?
+
+## Code Async
+
+- Expliquez ce que signifie le suffixe "async" sur le nom d'une méthode ?
+- Expliquez les mots-clé async/await ?
+- Expliquez ce qu'est un CancellationToken ?
+- Que ce passe-t-il lorsqu'une méthode commence par "Task.Yield();" ?
+    - Si dans une méthode, dans une boucle for il y a "yield return result;", que ce passe-t-il ?
 
 ## ORM Entity framework
 
