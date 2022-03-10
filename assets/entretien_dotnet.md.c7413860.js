@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as r}from"./app.73c69002.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/dotnet.md"}',a={};function o(n,c,s,_,d,i){return r(),e("div")}var l=t(a,[["render",o]]);export{f as __pageData,l as default};

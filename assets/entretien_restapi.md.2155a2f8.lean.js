@@ -1,0 +1,1 @@
+import{_ as e,c as l,o as i,a as t}from"./app.73c69002.js";const m='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/restapi.md"}',r={},o=t("",1),s=[o];function a(n,u,c,p,_,T){return i(),l("div",null,s)}var P=e(r,[["render",a]]);export{m as __pageData,P as default};
