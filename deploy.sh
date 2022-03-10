@@ -1,25 +1,43 @@
 #!/usr/bin/env sh
-echo "origin: $1"
+
+# Check if PAT and REPO are provide, ".\deploy.sh <PAT>@<REPO>.git"
+if [ -z "$1" ]; then
+  echo "Please provide '<PAT>@<REPO>.git'"
+  echo "Exiting..."
+  sleep 2
+  exit
+fi
+
+echo "origin (https://<PAT>@<REPO>.git): $1"
 
 # abort on errors
 set -e
 
+# Clean previous build and create dist directory
 pnpm run clean:dist
 cd docs/.vitepress/ || exit
 mkdir dist
 cd dist || exit
+
+# Initialize a new git repository with the remote where to push
 git init
 git remote add origin https://"$1"
 git fetch --all
+
+# Wait to retrieve and fetch origin
 sleep 5
 git checkout gh-pages
 pnpm run docs:build
+
+# Wait for the build
 sleep 10
 git status
 git add .
 git status
-git commit -m 'deploy'
+git commit -m 'deploy: latest version of VitePress-Docs'
 sleep 5
 git push --force
-echo "Pushed on github"
+echo "Pushed on github gh-pages"
+
+# Enable this parameter to let the shell open after finished
 $SHELL

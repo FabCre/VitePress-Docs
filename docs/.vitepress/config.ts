@@ -11,7 +11,7 @@ export default defineConfig({
       '/entretien/': getEntretienSidebarLinks(),
       '/git': [],
       '/cybersec': [],
-      '/linux/': [],
+      '/install/': [],
       '/veille': [],
       '/': getSidebarLinks(),
     },
@@ -24,7 +24,7 @@ function getNavigationRoutes() {
     { text: 'Entretien', link: '/entretien/' },
     { text: 'Git', link: '/git' },
     { text: 'CyberSec', link: '/cybersec/' },
-    { text: 'Linux', link: '/linux/' },
+    { text: 'Install', link: '/install/' },
     { text: 'Veille', link: '/veille' },
   ];
 }
