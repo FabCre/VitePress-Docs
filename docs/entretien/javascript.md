@@ -11,4 +11,5 @@
 - Qu'est-ce qu'une High Order Function ?
 - Qu'est-ce qu'une "Promise" ?
     - À quoi serve les mots clefs "async await" ?
-- Qu'est-ce qu'un middleware ? 
+- Qu'est-ce qu'un middleware ?
+- Qu'est-ce qu'une IIFE ?

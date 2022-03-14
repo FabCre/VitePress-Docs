@@ -21,6 +21,10 @@ C'est-à-dire qu'en recherchant les éléments de gauche, nous avons trouvé que
 totalité, y compris cette remarque.
 :::
 
+## OOP
+
+- Quels sont les 3 grands principes de l'orienté objet ?
+
 ## SOLID
 
 ::: details Principes SOLID
