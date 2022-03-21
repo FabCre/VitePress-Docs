@@ -10,6 +10,7 @@ export default defineConfig({
     sidebar: {
       '/entretien/': getEntretienSidebarLinks(),
       '/git': [],
+      '/nvim': [],
       '/cybersec': [],
       '/install/': [],
       '/veille': [],
@@ -23,6 +24,7 @@ function getNavigationRoutes() {
     { text: 'Home', link: '/' },
     { text: 'Entretien', link: '/entretien/' },
     { text: 'Git', link: '/git' },
+    { text: 'Nvim', link: '/nvim' },
     { text: 'CyberSec', link: '/cybersec/' },
     { text: 'Install', link: '/install/' },
     { text: 'Veille', link: '/veille' },
