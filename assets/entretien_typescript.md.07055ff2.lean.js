@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as i,a as u}from"./app.67a20785.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/typescript.md"}',l={},o=u("",1),n=[o];function r(s,a,c,p,q,_){return i(),t("div",null,n)}var m=e(l,[["render",r]]);export{f as __pageData,m as default};

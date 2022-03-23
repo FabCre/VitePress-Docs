@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as l,a as i}from"./app.67a20785.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/javascript.md"}',u={},o=i("",1),s=[o];function a(n,c,r,_,p,d){return l(),t("div",null,s)}var m=e(u,[["render",a]]);export{f as __pageData,m as default};
