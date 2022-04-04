@@ -22,7 +22,6 @@ export default defineConfig({
 function getNavigationRoutes() {
   return [
     { text: 'Home', link: '/' },
-    { text: 'Entretien', link: '/entretien/' },
     { text: 'Git', link: '/git' },
     { text: 'Nvim', link: '/nvim' },
     { text: 'CyberSec', link: '/cybersec/' },

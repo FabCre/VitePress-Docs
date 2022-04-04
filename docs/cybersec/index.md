@@ -12,7 +12,6 @@
 
 # Instruction interministérielle n° 901
 
-
 # CGI Academia
 
 ### Track 1 : CGI Principes fondamentaux de la sécurité des applications
