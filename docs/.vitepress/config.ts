@@ -14,6 +14,7 @@ export default defineConfig({
       '/cybersec': [],
       '/install/': [],
       '/veille': [],
+      '/linux/': [],
       '/': getSidebarLinks(),
     },
   },
@@ -27,6 +28,7 @@ function getNavigationRoutes() {
     { text: 'CyberSec', link: '/cybersec/' },
     { text: 'Install', link: '/install/' },
     { text: 'Veille', link: '/veille' },
+    { text: 'Linux', link: '/linux/' },
   ];
 }
 
