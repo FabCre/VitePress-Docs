@@ -1,1 +1,0 @@
-import{_ as e,d as t,o as n,f as i}from"./app.16871e44.js";const g='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/angular.md"}',l={},o=i("",1),r=[o];function s(a,c,u,m,_,d){return n(),t("div",null,r)}var f=e(l,[["render",s]]);export{g as __pageData,f as default};
