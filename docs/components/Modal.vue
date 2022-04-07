@@ -9,7 +9,7 @@ export default {
   },
   methods: {
     submit() {
-      if (this.unlockPage === 'remind') {
+      if (this.unlockPage === `remind${new Date().getMinutes()}`) {
         this.isModalVisible = false;
       }
     },
