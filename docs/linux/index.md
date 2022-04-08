@@ -2,10 +2,6 @@
 
 ::: warning Tips
 https://www.bitslovers.com/tag/command/
-
-https://www.computerhope.com/issues/chshell.htm#Why-Is-It-Called-A-Shell
-
-https://itsfoss.com/run-shell-script-linux/
 :::
 
 ::: details Reduce PDF Size with Ghostscript
@@ -42,6 +38,7 @@ The /prepress is the default option if you don’t specify any options.
 
 ::: details Convert JPG to PDF with ImageMagick
 convert -density 300 fileToConvert.jpg outputFile.pdf
+
 -density specify the dpi that the PDF is rendered. Placing this to 300/600 will give pretty good quality for your PDF file.
 :::
 
@@ -51,4 +48,23 @@ mv -v fileToMove destinationForTheFile
 
 ::: details Rename a file 
 mv fileToRename newNameOfFile
+:::
+
+::: details Execute a script .sh
+zsh my-script.sh or ./my-script.sh
+:::
+
+::: details Copy a file
+cp sourceFile destinationFile
+-r for recursive
+:::
+
+::: details Remove a file or directory
+rm fileToRemove
+-Rf for recursive with force
+:::
+
+::: details Making a directory or a file
+mkdir myDirectory
+touch myFile
 :::
