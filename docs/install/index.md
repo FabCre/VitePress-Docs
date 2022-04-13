@@ -1,8 +1,12 @@
 ## Install fonts
 
 - Victor Mono
-- Télécharger les patched fonts sur le https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts
+- Télécharger les patched fonts sur [NerdFonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts)
 - Installer ces fonts pour tous les utilisateurs afin qu'elles soient disponible partout
+
+## Starship theme
+
+[Starship repo](https://starship.rs/)
 
 ## Install mandatory tools
 
@@ -11,39 +15,52 @@
 
 ## Neo Vim
 
-### Pour Windows
+::: tip Windows
 
-Here is how you can do it in powershell:
+- Installer NeoVim en suivant les instrutions du repo [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) 
 
+- La configuration doit être dans "AppData", il faut créer le fichier pour ensuite y mettre la config. La command suivante permet de créer le fichier et le inti.vim pour une configuration standard.
+
+``` Powershell
 mkdir ~\AppData\Local\nvim New-Item -Path ~\AppData\Local\nvim\init.vim -Type File
+```
 
-And then you can edit the file in nvim with <:edit $MYVIMRC>
+- Pour éditer le fichier de configuration standard, taper ":edit $MYVIMRC".
+:::
 
-#### WSL 2
+::: info WSL 2
 
-Remove neovim if you have it in your system
+- Supprimer neovim si il est déjà existant sur le sub system
 
+``` shell
 sudo apt remove --purge neovim
 sudo apt autoremove
+```
 
-Download nvim.appimage
+- Télécharger nvim.appimage (voir le numéro de version sur le repo github releases)
 
+``` shell
 cd ~
 wget https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage
+```
 
-Move the file and flag it as runnable
+- Déplacer le fichier appimage et le rendre runnable
 
+``` shell
 sudo mv nvim.appimage /usr/local/bin
 sudo chmod +x /usr/local/bin/nvim.appimage
+```
 
-Set the command vi, vim and ex to run neovim
-
+- Rendre les commandes "vi", "vim" et "ex" pour éxecuter neovim
+``` shell
 CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage
 sudo update-alternatives --install /usr/bin/ex v "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vi vi "${CUSTOM_NVIM_PATH}" 110
 sudo update-alternatives --install /usr/bin/vim vim "${CUSTOM_NVIM_PATH}" 110
+```
+:::
 
-### Pour Linux 
+::: tip Linux 
 
 Créer les fichiers dans .config (/home/"user"/.config/nvim/)
 
@@ -54,12 +71,15 @@ Installer ce qui manque dans le check (nodejs, ruby, python)
 pacman -S ripgrep
 
 pacman -S fd
+:::
 
 ## Git config
 
 Application React avec vite sur [github page](https://fabcre.github.io/React-Git-Help/).
 
 ## Powershell & profile
+
+Emplacement du fichier profile  
 
 ## Zsh
 
@@ -69,13 +89,13 @@ Installer spaceship prompt
 
 https://linuxhint.com/use-zsh-auto-suggestions/ <== pour installer proprement zsh
 
-::: details zshrc
+::: details zshrc contenu du fichier
 autoload -U promptinit; promptinit
 
-### Init with spaceship theme
+# Init with spaceship theme
 eval "$(starship init zsh)"
 
-### Utils function custom
+# Utils function custom
 function example () {
     cd "/home/user/"
 }
@@ -84,18 +104,14 @@ function example2 () {
     cd "/home/user/ && ls -a
 }
 
-### History for Zsh
+# History for Zsh
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-### Plugin sources
+# Plugin sources
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 :::
-
-## Starship theme
-
-https://starship.rs/

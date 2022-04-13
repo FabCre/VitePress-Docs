@@ -39,5 +39,8 @@ sleep 5
 git push --force
 echo "Pushed on github gh-pages"
 
+# Clean build
+pnpm run clean:dist
+
 # Enable this parameter to let the shell open after finished
 $SHELL
