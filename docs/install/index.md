@@ -6,7 +6,7 @@
 
 ## Starship theme
 
-[Starship repo](https://starship.rs/)
+- Installer [Starship repo](https://starship.rs/).
 
 ## Install mandatory tools
 
@@ -79,15 +79,59 @@ Application React avec vite sur [github page](https://fabcre.github.io/React-Git
 
 ## Powershell & profile
 
-Emplacement du fichier profile  
+- Installer Starship
 
-## Zsh
+- Emplacement du fichier profile "C:\Users\USERNAME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
 
-Emplacement du fichier .zshrc / .zshenv / .zsh_history => /home/user/
+- Pour connaitre l'emplacement du fichier : "$PROFILE", pour le lire cat "$PROFILE".
 
-Installer spaceship prompt
+::: details PowerShell profile contenu du fichier
+function Go-To-Docs {
+    Set-Location -Path "~\Documents\Ressources-Techniques\VitePress-Docs"
+}
 
-https://linuxhint.com/use-zsh-auto-suggestions/ <== pour installer proprement zsh
+function Go-Ressources {
+    Set-Location -Path "~\Documents\Ressources-Techniques\"
+}
+
+function Nvim-Here {
+    nvim .
+}
+
+Invoke-Expression (&starship init powershell)
+:::
+
+## Zsh & .zshrc
+
+- Emplacement des fichiers "/home/user/".
+
+- Installer Zsh 
+
+``` shell
+# Debian
+sudo apt install zsh
+# Arch
+sudo pacman -S zsh
+```
+
+- Change le shell par défaut
+
+``` shell
+chsh -s $(which zsh)
+``` 
+
+- Vérifier le shell par défaut
+
+``` shell
+which $SHELL
+dois être => /usr/bin/zsh
+```
+
+- Ajouter les plugins, cloner les plugins depuis les repo git puis les déplcer dans le répertoire "/usr/share/zsh/plugins/PLUGINS_NAME/"
+    -   [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    -   [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+- Ajouter dans le .zshrc les plugins comme dans la configuration ci dessous.
 
 ::: details zshrc contenu du fichier
 autoload -U promptinit; promptinit
