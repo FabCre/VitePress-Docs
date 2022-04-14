@@ -26,7 +26,7 @@ Liste des [emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/
 ### Block code
 
 ```js{2}
-console.log('Jest, Jasmine pour le test unitaires');
+console.log('Jasmine pour les tests unitaires');
 // with Highlight
 ```
 
