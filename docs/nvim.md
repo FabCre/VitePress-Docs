@@ -53,3 +53,13 @@
 |----------|-----------------------------------|---------|
 | **:m N** | bouge la ligne courante vers la N |         |
 | **:n N** | va à la ligne N                   |         |
+
+### Raccourcis avec la configuration lua tokyonight
+
+- En mode **Normal**
+  - Touche leader **SPACE** : panneau which key général
+  - Touche global **g** :  panneau which key global
+
+| Shortcut      | Description                                 | Comment |
+|---------------|---------------------------------------------|---------|
+| **gcc**       | commenter ou décommenter une ligne          |         |

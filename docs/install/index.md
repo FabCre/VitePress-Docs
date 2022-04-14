@@ -128,18 +128,16 @@ dois être => /usr/bin/zsh
 ```
 
 - Ajouter les plugins, cloner les plugins depuis les repo git puis les déplcer dans le répertoire "/usr/share/zsh/plugins/PLUGINS_NAME/"
-    -   [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-    -   [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 - Ajouter dans le .zshrc les plugins comme dans la configuration ci dessous.
 
 ::: details zshrc contenu du fichier
 autoload -U promptinit; promptinit
 
-# Init with spaceship theme
 eval "$(starship init zsh)"
 
-# Utils function custom
 function example () {
     cd "/home/user/"
 }
@@ -148,13 +146,11 @@ function example2 () {
     cd "/home/user/ && ls -a
 }
 
-# History for Zsh
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-# Plugin sources
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
