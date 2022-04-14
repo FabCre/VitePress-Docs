@@ -19,7 +19,7 @@
 
 - Installer NeoVim en suivant les instrutions du repo [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) 
 
-- La configuration doit être dans "AppData", il faut créer le fichier pour ensuite y mettre la config. La command suivante permet de créer le fichier et le inti.vim pour une configuration standard.
+- La configuration doit être dans "AppData", il faut créer le fichier pour ensuite y mettre la config. La command suivante permet de créer le fichier et le "init.vim" pour une configuration standard.
 
 ``` Powershell
 mkdir ~\AppData\Local\nvim New-Item -Path ~\AppData\Local\nvim\init.vim -Type File
@@ -37,7 +37,7 @@ sudo apt remove --purge neovim
 sudo apt autoremove
 ```
 
-- Télécharger nvim.appimage (voir le numéro de version sur le repo github releases)
+- Télécharger nvim.appimage (voir le numéro de version sur le repo gitHub releases)
 
 ``` shell
 cd ~
@@ -75,7 +75,7 @@ pacman -S fd
 
 ## Git config
 
-Application React avec vite sur [github page](https://fabcre.github.io/React-Git-Help/).
+Application React avec vite sur [gitHub page](https://fabcre.github.io/React-Git-Help/).
 
 ## Powershell & profile
 
@@ -83,7 +83,7 @@ Application React avec vite sur [github page](https://fabcre.github.io/React-Git
 
 - Emplacement du fichier profile "C:\Users\USERNAME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
 
-- Pour connaitre l'emplacement du fichier : "$PROFILE", pour le lire cat "$PROFILE".
+- Pour connaitre l'emplacement du fichier : "$PROFILE", pour le lire "cat $PROFILE".
 
 ::: details PowerShell profile contenu du fichier
 function Go-To-Docs {

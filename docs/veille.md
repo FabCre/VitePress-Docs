@@ -18,4 +18,4 @@
 
 - Jack Herrington
 
-## Youtube Channel
+## YouTube Channel

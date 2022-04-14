@@ -10,7 +10,7 @@ export default defineConfig({
     sidebar: {
       '/entretien/': getEntretienSidebarLinks(),
       '/git': [],
-      '/nvim': [],
+      '/nvim/': getNvimSidebarLinks(),
       '/cybersec': [],
       '/install/': [],
       '/veille': [],
@@ -23,12 +23,13 @@ export default defineConfig({
 function getNavigationRoutes() {
   return [
     { text: 'Home', link: '/' },
-    { text: 'Git', link: '/git' },
-    { text: 'Nvim', link: '/nvim' },
-    { text: 'CyberSec', link: '/cybersec/' },
     { text: 'Install', link: '/install/' },
-    { text: 'Veille', link: '/veille' },
+    { text: 'Nvim', link: '/nvim/' },
+    { text: 'Git', link: '/git' },
     { text: 'Linux', link: '/linux/' },
+    { text: 'CyberSec', link: '/cybersec/' },
+    { text: 'Entretien', link: '/entretien/' },
+    { text: 'Veille', link: '/veille' },
   ];
 }
 
@@ -58,4 +59,15 @@ function getEntretienSidebarLinks() {
       ],
     },
   ];
+}
+
+function getNvimSidebarLinks() {
+  return [{
+    text: 'Configuration',
+    link: '/nvim/',
+    children: [
+      { text: 'Apprendre', link: '/nvim/learn'},
+      { text: 'Raccourcis', link: '/nvim/raccourcis'},
+    ]
+  }]
 }

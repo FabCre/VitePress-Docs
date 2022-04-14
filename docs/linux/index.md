@@ -64,7 +64,7 @@ rm fileToRemove
 -Rf for recursive with force
 :::
 
-::: details Making a directory or a file
+::: details Making a directory or file
 mkdir myDirectory
 touch myFile
 :::
