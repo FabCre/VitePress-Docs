@@ -1,0 +1,1 @@
+import{_ as e,d as s,o as t,f as i}from"./app.0c953b3a.js";const h='{"title":"Command","description":"","frontmatter":{},"headers":[{"level":2,"title":"Command","slug":"command"}],"relativePath":"linux/index.md"}',a={},o=i("",11),r=[o];function l(p,d,m,c,u,n){return t(),s("div",null,r)}var y=e(a,[["render",l]]);export{h as __pageData,y as default};
