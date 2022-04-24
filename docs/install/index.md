@@ -17,7 +17,7 @@
 
 ::: tip Windows
 
-- Installer NeoVim en suivant les instrutions du repo [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) 
+- Installer NeoVim en suivant les instructions du repo [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) 
 
 - La configuration doit être dans "AppData", il faut créer le fichier pour ensuite y mettre la config. La command suivante permet de créer le fichier et le "init.vim" pour une configuration standard.
 
@@ -30,7 +30,7 @@ mkdir ~\AppData\Local\nvim New-Item -Path ~\AppData\Local\nvim\init.vim -Type Fi
 
 ::: info WSL 2
 
-- Supprimer neovim si il est déjà existant sur le sub system
+- Supprimer neovim s'il est déjà existant sur le sub system
 
 ``` shell
 sudo apt remove --purge neovim
