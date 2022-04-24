@@ -8,9 +8,9 @@ MERGE
 
 Bon choix lorsque l'on souhaite ajouter notre travail à un travail collectif.
 
-Cela va créer un commit de merge regroupant les commits et modifier la branche master. Exemple :
+Cela va créer un commit de merge regroupant les commits et modifier la branche master. 
 
-Dans le cas où, il n'y a pas de commit en "retard" sur la branche feature, aucun commit de marge n'est créé, cela se
+Dans le cas où, il n'y a pas de commit en "retard" sur la branche feature, aucun commit de merge n'est créé, cela se
 nomme le "Fast Forward".
 
 REBASE

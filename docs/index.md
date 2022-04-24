@@ -23,6 +23,10 @@
 
 Liste des [emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json) utilisables.
 
+### Block code beautify
+
+Site pour produire des blocs code [beautify chalk](https://chalk.ist)
+
 ### Block code
 
 ```js{2}

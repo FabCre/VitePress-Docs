@@ -51,7 +51,7 @@ sudo mv nvim.appimage /usr/local/bin
 sudo chmod +x /usr/local/bin/nvim.appimage
 ```
 
-- Rendre les commandes "vi", "vim" et "ex" pour éxecuter neovim
+- Rendre les commandes "vi", "vim" et "ex" pour exécuter neovim
 ``` shell
 CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage
 sudo update-alternatives --install /usr/bin/ex v "${CUSTOM_NVIM_PATH}" 110
