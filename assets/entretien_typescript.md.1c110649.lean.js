@@ -1,0 +1,1 @@
+import{_ as e,o as t,d as i,f as u}from"./app.6f707c34.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/typescript.md"}'),n={name:"entretien/typescript.md"},l=u("",1),o=[l];function s(r,a,c,p,q,_){return t(),i("div",null,o)}const m=e(n,[["render",s]]);export{f as __pageData,m as default};

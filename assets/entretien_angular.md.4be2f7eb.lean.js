@@ -1,0 +1,1 @@
+import{_ as e,o as t,d as n,f as i}from"./app.6f707c34.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/angular.md"}'),l={name:"entretien/angular.md"},o=i("",1),r=[o];function s(a,c,u,m,d,_){return t(),n("div",null,r)}const f=e(l,[["render",s]]);export{g as __pageData,f as default};
