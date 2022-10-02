@@ -14,7 +14,8 @@ export default defineConfig({
       '/cybersec': [],
       '/install/': [],
       '/veille': [],
-      '/linux/': [],
+      '/linux/': getLinuxSidebarLinks(),
+      '/sensor/': getSensorSidebarLinks()
     },
   },
 });
@@ -28,6 +29,7 @@ function getNavigationRoutes() {
     { text: 'Linux', link: '/linux/' },
     { text: 'CyberSec', link: '/cybersec/' },
     { text: 'Entretien', link: '/entretien/' },
+    { text: 'Sensor', link: '/sensor/' },
     { text: 'Veille', link: '/veille' },
   ];
 }
@@ -60,6 +62,31 @@ function getNvimSidebarLinks() {
       items: [
         { text: 'Apprendre', link: '/nvim/learn' },
         { text: 'Raccourcis', link: '/nvim/raccourcis' },
+      ],
+    },
+  ];
+}
+
+function getLinuxSidebarLinks() {
+  return [
+    {
+      text: 'Linux',
+      items: [
+        { text: 'Command', link: '/linux/index' },
+        { text: 'Systemd', link: '/linux/systemd' },
+      ],
+    },
+  ];
+}
+
+function getSensorSidebarLinks() {
+  return [
+    {
+      text: 'Sensor',
+      items: [
+        { text: 'Projet', link: '/sensor/index' },
+        { text: 'Architecture', link: '/sensor/architecture' },
+        { text: 'Hardware', link: '/sensor/hardware' },
       ],
     },
   ];
