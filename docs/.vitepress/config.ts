@@ -15,7 +15,6 @@ export default defineConfig({
       '/install/': [],
       '/veille': [],
       '/linux/': [],
-      '/': getSidebarLinks(),
     },
   },
 });
@@ -33,18 +32,11 @@ function getNavigationRoutes() {
   ];
 }
 
-function getSidebarLinks() {
-  return [
-    { text: 'Table of contents', link: '/' },
-  ];
-}
-
 function getEntretienSidebarLinks() {
   return [
     {
-      text: 'Sujets',
-      link: '/entretien/',
-      children: [
+      text: 'Entretien',
+      items: [
         { text: 'Test', link: '/entretien/test' },
         { text: 'JavaScript', link: '/entretien/javascript' },
         { text: 'TypeScript', link: '/entretien/typescript' },
@@ -62,12 +54,13 @@ function getEntretienSidebarLinks() {
 }
 
 function getNvimSidebarLinks() {
-  return [{
-    text: 'Configuration',
-    link: '/nvim/',
-    children: [
-      { text: 'Apprendre', link: '/nvim/learn'},
-      { text: 'Raccourcis', link: '/nvim/raccourcis'},
-    ]
-  }]
+  return [
+    {
+      text: 'NeoVim',
+      items: [
+        { text: 'Apprendre', link: '/nvim/learn' },
+        { text: 'Raccourcis', link: '/nvim/raccourcis' },
+      ],
+    },
+  ];
 }

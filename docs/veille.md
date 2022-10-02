@@ -1,11 +1,11 @@
 ## Site de veille
 
-- https://www.getrevue.co/profile/sebastien-lorber
-- https://fettblog.eu/  
-- https://www.joshwcomeau.com/
-- https://www.journalduhacker.net/
-- https://www.developpez.com/
-- https://daily.dev/
+- [Sebastien Lorber](https://www.getrevue.co/profile/sebastien-lorber)
+- [Fett](https://fettblog.eu/)
+- [Josh Comeau](https://www.joshwcomeau.com/)
+- [Journal du Hack](https://www.journalduhacker.net/)
+- [Developpez](https://www.developpez.com/)
+- [Daily dev](https://daily.dev/)
 
 ## Mailing list
 
@@ -14,8 +14,7 @@
 - Node Weekly
 - React Weekly
 
-## Twitter
-
-- Jack Herrington
-
 ## YouTube Channel
+
+- [ThePrimeagen](https://www.youtube.com/c/ThePrimeagen)
+- [JackHerrington](https://www.youtube.com/c/JackHerrington)
