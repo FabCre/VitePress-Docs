@@ -1,5 +1,10 @@
 <script>
 export default {
+// How to use, on the top of md file insert balise script
+// <script setup>
+// import Modal from '../components/Modal.vue';
+// /script>
+// <Modal />
   name: 'Modal',
   data() {
     return {

@@ -11,7 +11,7 @@ export default defineConfig({
       '/entretien/': getEntretienSidebarLinks(),
       '/git': [],
       '/nvim/': getNvimSidebarLinks(),
-      '/cybersec': [],
+      '/cybersec/': getCybersecSidebarLinks(),
       '/install/': [],
       '/veille': [],
       '/linux/': getLinuxSidebarLinks(),
@@ -62,6 +62,18 @@ function getNvimSidebarLinks() {
       items: [
         { text: 'Apprendre', link: '/nvim/learn' },
         { text: 'Raccourcis', link: '/nvim/raccourcis' },
+      ],
+    },
+  ];
+}
+
+function getCybersecSidebarLinks() {
+  return [
+    {
+      text: 'CyberSec',
+      items: [
+        { text: 'Rex Cci 2022', link: '/cybersec/rex2022' },
+        { text: 'Mooc Anssi', link: '/cybersec/moocAnssi' },
       ],
     },
   ];
