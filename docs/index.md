@@ -1,39 +1,25 @@
-# Table of contents for the page
-[[toc]]
+---
+layout: home
 
-# Motivation
+title: Documentation
+titleTemplate: Documentation construite avec vitepress
 
-:purple_circle: Pour avoir une doc simple sur les principaux points/difficultés que j'aborde au quotidien.
+hero:
+  name: Documentation
+  text: vitepress
+  tagline: Documentation regroupant des tutoriels, retours d'experiences et autres aides.
+  actions:
+    - theme: brand
+      text: View on GitHub FabCre
+      link: https://github.com/FabCre
 
-:green_circle: Des reminders toujours a porté sur les outils/techniques que j'utilise.
-
-## Quelques astuces/ressources VitePress
-
-:red_circle: [DOC Officielle](https://vitepress.vuejs.org/)
-
-### Table
-
-| Tables        |      Are      |  Cool |
-|---------------|:-------------:|------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      |   centered    |   $12 |
-| zebra stripes |   are neat    |    $1 |
-
-### Emojis
-
-Liste des [emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json) utilisables.
-
-### Block code beautify
-
-Site pour produire des blocs code [beautify chalk](https://chalk.ist)
-
-### Block code
-
-```js{2}
-console.log('Jasmine pour les tests unitaires');
-// with Highlight
-```
-
-### Tip et détails conteneurs
-
-[Tip et détails](https://vitepress.vuejs.org/guide/markdown.html#custom-containers)
+features:
+  - title: Linux
+    details: Quelques aides et scripts d'installations.
+  - title: Nvim
+    details: Installation et configuration de neovim.
+  - title: Git
+    details: Aide de commande git.
+  - title: Entretien
+    details: Questions pour entretien technique.
+---

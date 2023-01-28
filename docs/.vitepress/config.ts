@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: 'Help and Remind',
+  title: ' ',
   description: 'Helpers and reminders on a VitePress application',
   lang: 'fr-FR',
   base: '/VitePress-Docs/',
@@ -23,15 +23,19 @@ export default defineConfig({
 
 function getNavigationRoutes() {
   return [
-    { text: 'Home', link: '/' },
-    { text: 'Install', link: '/install/' },
     { text: 'Nvim', link: '/nvim/' },
     { text: 'Git', link: '/git' },
     { text: 'Linux', link: '/linux/' },
-    { text: 'CyberSec', link: '/cybersec/' },
-    { text: 'Entretien', link: '/entretien/' },
-    { text: 'Sensor', link: '/sensor/' },
-    { text: 'Veille', link: '/veille' },
+    {
+      items: [
+        { text: 'Install', link: '/install/' },
+        { text: 'Vitepress help', link: '/vitepress/' },
+        { text: 'CyberSec', link: '/cybersec/' },
+        { text: 'Entretien', link: '/entretien/' },
+        { text: 'Sensor', link: '/sensor/' },
+        { text: 'Veille', link: '/veille' },
+      ],
+    },
   ];
 }
 
@@ -88,7 +92,7 @@ function getLinuxSidebarLinks() {
         { text: 'Command', link: '/linux/index' },
         { text: 'Systemd', link: '/linux/systemd' },
         { text: 'RAID', link: '/linux/raid' },
-        { text: 'S.M.A.R.T', link: '/linux/smart' },
+        { text: 'SMART', link: '/linux/smart' },
       ],
     },
   ];
