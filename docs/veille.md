@@ -18,3 +18,9 @@
 
 - [ThePrimeagen](https://www.youtube.com/c/ThePrimeagen)
 - [JackHerrington](https://www.youtube.com/c/JackHerrington)
+
+## Mastodon
+
+- @deadparrot@mastodon.social
+- @virtualabs@mamot.fr
+- @Mara@hachyderm.io

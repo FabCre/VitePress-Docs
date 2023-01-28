@@ -6,6 +6,7 @@ export default defineConfig({
   lang: 'fr-FR',
   base: '/VitePress-Docs/',
   themeConfig: {
+    logo: '/manjaro.svg',
     nav: getNavigationRoutes(),
     sidebar: {
       '/entretien/': getEntretienSidebarLinks(),
@@ -15,7 +16,7 @@ export default defineConfig({
       '/install/': [],
       '/veille': [],
       '/linux/': getLinuxSidebarLinks(),
-      '/sensor/': getSensorSidebarLinks()
+      '/sensor/': getSensorSidebarLinks(),
     },
   },
 });
@@ -86,6 +87,8 @@ function getLinuxSidebarLinks() {
       items: [
         { text: 'Command', link: '/linux/index' },
         { text: 'Systemd', link: '/linux/systemd' },
+        { text: 'S.M.A.R.T', link: '/linux/smart' },
+        { text: 'R.A.I.D', link: '/linux/raid' },
       ],
     },
   ];
