@@ -13,6 +13,9 @@
 - Deno WeekLy
 - Node Weekly
 - React Weekly
+- Rust Weekly
+- LogRocket
+- JetBrains
 
 ## YouTube Channel
 

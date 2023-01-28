@@ -1,39 +1,76 @@
-# Créer un RAID 1
+# Créer un RAID 1 chiffré
 
-Tout d’abord vous aurez besoin de 2 disques durs de même capacité. Ici je vais utiliser 2 disques 1To ce qui va me fournir 1To utilisable et 1To de copie au cas où un des deux disques ne marcherait plus.
+## Mdadm
 
-Il vous faut formater les disques avec une table de partition en GPT et une partition non formatée de la taille du disque (notez que vous pouvez très bien utiliser des partitions de plus faible taille tant qu’elles font la même taille pour le RAID).
+Installer mdadm si il n'est pas disponible et activer le service.
 
-Vous aurez besoin du logiciel mdadm à installer avec votre packageur préféré. Vous pourrez alors activer le service.
-
+```shell
 systemctl start mdadm
+```
+
+```shell
 systemctl enable mdadm
-Il faut maintenant créé le volume RAID. Vérifiez bien vos disques avec :
+```
 
+## Preparer les disques
+
+Avec un gestionnaire de partitions, chiffrer et creer les partitions sur les disques.
+
+```shell
+# Affiche les disques
 fdisk -l
-Une fois repérés vous pouvez créer le volume avec les partitions correspondantes (sda et sdb sont prises pour l’exemple) :
+```
 
-mdadm --create /dev/md0 -l1 -n2 /dev/sda1 /dev/sdb1
-Vous pouvez voir l’état de la synchronisation avec :
+![disks](images/disks-kde-1.png)
 
+## Créer le raid
+
+Dans l'exemple, lancer la commande en choisissant le nom du raid `/dev/md***`.
+
+```shell
+sudo mdadm --create /dev/md120 --level=mirror --raid-devices=2 /dev/sd[c-d]1
+```
+
+![disks](images/create-raid.png)
+
+Ensuite, la synchronisation des disques s'effectue.
+
+```shell
+# Pour voir l'avancement
 watch cat /proc/mdstat
-Pour avoir des infos sur votre volume :
+```
 
-mdadm --detail /dev/md0
-Vous pouvez maintenant vous servir de ce périphérique comme d’un disque dur.
+![disks](images/watch-mdstat-sync.png)
 
-Vous pouvez notamment recréer une table des partitions et créer une partition ext4/luks chiffrée.
+```shell
+# Pour voir les details du raid
+sudo mdadm --detail /dev/md120
+```
 
-Je vous conseille d’utiliser un outil graphique comme gparted ou kde partition manager. Ils sont simples d’utilisation et fonctionnent bien.
+## Monter automatiquement le raid
 
-Panne d’un disque dur
-En cas de panne d’un disque dur, la première chose à faire est d’identifier celui qui ne fonctionne plus et de le remplacer par un disque fonctionnel de la même taille.
+Dans le fichier `/etc/fstab` ajouter une ligne a la fin du fichier avec les bonnes options :
 
+```shell
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a device; this may
+# be used with UUID= as a more robust way to name devices that works even if
+# disks are added and removed. See fstab(5).
+#
+# <file system>             <mount point>  <type>  <options>  <dump>  <pass>
+UUID=E799-2B00                            /boot/efi      vfat    umask=0077 0 2
+/dev/mapper/luks-7a4ad3ac-f22f-4567-9a1d-07d7b2e38178 /              ext4    defaults,noatime 0 1
+/dev/md120 /run/media/panda/d5afc656-bc4a-4b1a-800b-d24f2bb7bc9c ext4 defaults,nofail,discard 0 0
+```
+
+## En cas de panne d’un disque dur
+
+Identifier le disque defaillant avec un SMART et le remplacer par un disque fonctionnel de la même taille.
 Il faut ensuite créé une nouvelle table de partition avec un seule partition non formatée, exactement comme si vous devez créer un RAID avec ce disque.
 
-Vous pouvez enfin ajouter le disque dans le RAID (ici sdc est utilisé pour l’exemple, vérifiez bien le nom de votre partition) :
+Ajouter le disque dans le RAID voulu `/dev/md***` :
 
-mdadm --manage /dev/md0 --add /dev/sdc1
-Une fois la synchronisation terminée votre RAID 1 est de nouveau fonctionnel !
-
-watch cat /proc/mdstat
+```shell
+sudo mdadm --manage /dev/md0 --add /dev/sdc1
+```
