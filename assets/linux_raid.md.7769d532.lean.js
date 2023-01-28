@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,d as i}from"./app.79f2b470.js";const f=JSON.parse('{"title":"Créer un RAID 1","description":"","frontmatter":{},"headers":[],"relativePath":"linux/raid.md"}'),r={name:"linux/raid.md"},s=i("",16),n=[s];function o(d,u,l,p,c,m){return a(),t("div",null,n)}const _=e(r,[["render",o]]);export{f as __pageData,_ as default};
