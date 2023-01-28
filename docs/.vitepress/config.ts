@@ -87,8 +87,8 @@ function getLinuxSidebarLinks() {
       items: [
         { text: 'Command', link: '/linux/index' },
         { text: 'Systemd', link: '/linux/systemd' },
+        { text: 'RAID', link: '/linux/raid' },
         { text: 'S.M.A.R.T', link: '/linux/smart' },
-        { text: 'R.A.I.D', link: '/linux/raid' },
       ],
     },
   ];
