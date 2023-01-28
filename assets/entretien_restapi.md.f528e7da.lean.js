@@ -1,1 +1,0 @@
-import{_ as e,c as l,o as t,d as i}from"./app.a6648888.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/restapi.md"}'),r={name:"entretien/restapi.md"},o=i("",1),s=[o];function n(a,u,c,p,_,d){return t(),l("div",null,s)}const S=e(r,[["render",n]]);export{m as __pageData,S as default};
