@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as n,d as i}from"./app.a50e4a12.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"entretien/angular.md"}'),l={name:"entretien/angular.md"},o=i("",1),r=[o];function s(a,c,u,m,d,_){return n(),t("div",null,r)}const f=e(l,[["render",s]]);export{g as __pageData,f as default};
