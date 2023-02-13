@@ -1,10 +1,13 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: ' ',
+  title: 'Reminder',
   description: 'Helpers and reminders on a VitePress application',
   lang: 'fr-FR',
   base: '/VitePress-Docs/',
+  head: [
+    ['link', { rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }],
+  ],
   themeConfig: {
     logo: '/manjaro.svg',
     nav: getNavigationRoutes(),
