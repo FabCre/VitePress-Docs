@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'fr-FR',
   base: '/VitePress-Docs/',
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/public/favicon.ico' }],
   ],
   themeConfig: {
     logo: '/manjaro.svg',
