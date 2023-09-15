@@ -1,6 +1,6 @@
 ## Site de veille
 
-- [Sebastien Lorber](https://www.getrevue.co/profile/sebastien-lorber)
+- [Sebastien Lorber](https://sebastienlorber.com/)
 - [Fett](https://fettblog.eu/)
 - [Josh Comeau](https://www.joshwcomeau.com/)
 - [Journal du Hack](https://www.journalduhacker.net/)
