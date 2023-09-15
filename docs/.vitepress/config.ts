@@ -11,6 +11,9 @@ export default defineConfig({
   themeConfig: {
     logo: '/manjaro.svg',
     nav: getNavigationRoutes(),
+    search: {
+      provider: 'local'
+    },
     sidebar: {
       '/entretien/': getEntretienSidebarLinks(),
       '/git': [],

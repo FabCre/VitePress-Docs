@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Help and remind generated with vite press",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -12,13 +13,11 @@
   "author": "FabCre",
   "license": "ISC",
   "devDependencies": {
-    "flexsearch": "^0.7.31",
-    "prettier": "^2.8.4",
-    "vitepress": "^1.0.0-alpha.46",
-    "vitepress-plugin-search": "^1.0.4-alpha.19",
-    "vue": "^3.2.47"
+    "prettier": "^3.0.3",
+    "vitepress": "^1.0.0-rc.13",
+    "vue": "^3.3.4"
   },
   "dependencies": {
-    "vite": "^4.1.1"
+    "vite": "^4.4.9"
   }
 }
