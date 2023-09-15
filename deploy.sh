@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# Check if PAT and REPO are provide, ".\deploy.sh <PAT>@<REPO>.git"
+# Check if PAT and REPO are provide, ".\deploy.sh <PAT>@github.com/FabCre/VitePress-Docs.git"
 if [ -z "$1" ]; then
   echo "Please provide '<PAT>@<REPO>.git'"
   echo "Exiting..."
@@ -41,6 +41,8 @@ echo "Pushed on github gh-pages"
 
 # Clean build
 pnpm run clean:dist
+
+echo "Finished, check github action and close the shell"
 
 # Enable this parameter to let the shell open after finished
 $SHELL
