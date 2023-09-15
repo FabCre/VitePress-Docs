@@ -1,0 +1,1 @@
+import{_ as t,o as r,c as d,Q as e}from"./chunks/framework.31db9f4a.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"nvim/learn.md","filePath":"nvim/learn.md"}'),o={name:"nvim/learn.md"},n=e("",10),s=[n];function a(i,l,c,h,g,m){return r(),d("div",null,s)}const _=t(o,[["render",a]]);export{p as __pageData,_ as default};

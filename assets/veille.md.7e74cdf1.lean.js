@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as l,Q as r}from"./chunks/framework.31db9f4a.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"veille.md","filePath":"veille.md"}'),t={name:"veille.md"},i=r("",8),o=[i];function n(s,h,c,d,u,_){return a(),l("div",null,o)}const b=e(t,[["render",n]]);export{m as __pageData,b as default};
