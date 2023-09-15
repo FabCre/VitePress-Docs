@@ -6,10 +6,10 @@ export default defineConfig({
   lang: 'fr-FR',
   base: '/VitePress-Docs/',
   head: [
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/public/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/VitePress-Docs/favicon.ico' }],
   ],
   themeConfig: {
-    logo: 'public/manjaro.svg',
+    logo: '/manjaro.svg',
     nav: getNavigationRoutes(),
     search: {
       provider: 'local'
