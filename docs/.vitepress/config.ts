@@ -9,7 +9,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/public/favicon.ico' }],
   ],
   themeConfig: {
-    logo: '/manjaro.svg',
+    logo: 'public/manjaro.svg',
     nav: getNavigationRoutes(),
     search: {
       provider: 'local'
