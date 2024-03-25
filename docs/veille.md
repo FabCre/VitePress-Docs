@@ -9,6 +9,7 @@
 - [k49](https://k49.fr.nf)
 - [Ninja squad](https://blog.ninja-squad.com)
 - [Microsoft dev blog](https://devblogs.microsoft.com/typescript/)
+- [LinuxTricks](https://www.linuxtricks.fr/pages/bienvenue-sur-linuxtricks)
 
 ## Mailing list
 
