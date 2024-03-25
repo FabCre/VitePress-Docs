@@ -15,11 +15,15 @@
 - [This week in Rust](https://this-week-in-rust.org)
 - [LogRocket blog](https://blog.logrocket.com)
 - [JetBrains](https://account.jetbrains.com/login)
+- [Byte byte go](https://blog.bytebytego.com/)
+- [Linux handbook](https://linuxhandbook.com)
+- [It's FOSS](https://itsfoss.com)
 
 ## YouTube Channel
 
 - [ThePrimeagen](https://www.youtube.com/c/ThePrimeagen)
 - [JackHerrington](https://www.youtube.com/c/JackHerrington)
+- [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
 
 ## Mastodon
 
