@@ -6,6 +6,9 @@
 - [Journal du Hack](https://www.journalduhacker.net/)
 - [Developpez](https://www.developpez.com/)
 - [Daily dev](https://daily.dev/)
+- [k49](https://k49.fr.nf)
+- [Ninja squad](https://blog.ninja-squad.com)
+- [Microsoft dev blog](https://devblogs.microsoft.com/typescript/)
 
 ## Mailing list
 
