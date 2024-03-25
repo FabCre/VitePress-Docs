@@ -9,13 +9,12 @@
 
 ## Mailing list
 
-- Javascript Weekly
-- Deno WeekLy
-- Node Weekly
-- React Weekly
-- Rust Weekly
-- LogRocket
-- JetBrains
+- [Javascript Weekly](https://javascriptweekly.com)
+- [Node Weekly](https://nodeweekly.com)
+- [This week in React](https://thisweekinreact.com)
+- [This week in Rust](https://this-week-in-rust.org)
+- [LogRocket blog](https://blog.logrocket.com)
+- [JetBrains](https://account.jetbrains.com/login)
 
 ## YouTube Channel
 
