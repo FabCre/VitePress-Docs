@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  vitepress-reminder:
+    image: vitepress-reminder:dev
+    command: npm run docs:dev
+    networks:
+      dev:
+        aliases:
+          - vitepress.reminder.swarm
+    ports:
+      - "5173:5173"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ../../.:/usr/docs
+    deploy:
+      mode: replicated
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 1s
+        order: stop-first
+      restart_policy:
+        condition: any
+networks:
+  dev:
+    external: true

@@ -9,6 +9,23 @@ https://www.bitslovers.com/tag/command/
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed_PDF_file.pdf input_PDF_file.pdf
 ```
 
+```shell
+gs 
+ -q -dNOPAUSE -dBATCH -dSAFER \
+ -sDEVICE=pdfwrite \
+ -dCompatibilityLevel=1.3 \
+ -dPDFSETTINGS=/screen \
+ -dEmbedAllFonts=true -dSubsetFonts=true \
+ -dColorImageDownsampleType=/Bicubic \
+ -dColorImageResolution=144 \                `#PDF downsample color image resolution`
+ -dGrayImageDownsampleType=/Bicubic \
+ -dGrayImageResolution=144 \                 `#PDF downsample gray image resolution`
+ -dMonoImageDownsampleType=/Bicubic \
+ -dMonoImageResolution=144 \                 `#PDF downsample mono image resolution`
+ -sOutputFile=out.pdf \                      `#Output file`
+ file.pdf   
+```
+
 The dPDFSETTINGS parameter is what defines the compression level and so the quality of your compressed PDF file.
 
 The possibles values for dPDFSETTINGS are:

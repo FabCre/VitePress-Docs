@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  npm-install:
+    image: vitepress-reminder:dev
+    command: npm ci
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ../../.:/usr/docs

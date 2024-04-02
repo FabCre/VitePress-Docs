@@ -4,7 +4,7 @@
   - Touche leader **SPACE** : panneau which key général
   - Touche global **g** :  panneau which key global
   - Touche **Ctrl + w** : panneau which key window
-  - Touche **'**, **`**, **"**, **[**, **]**  : panneau which key mouvement
+  - Touche **'**, **`**, **"**, **[**, **]** : panneau which key mouvement
 
 | Shortcut      | Description                                 | Comment |
 |---------------|---------------------------------------------|---------|

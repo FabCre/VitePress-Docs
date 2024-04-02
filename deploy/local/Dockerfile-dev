@@ -1,0 +1,4 @@
+FROM node:18-alpine as vitepress-reminder
+RUN apk update
+WORKDIR /usr/docs
+CMD "npm" "docs:dev"
