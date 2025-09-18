@@ -8,6 +8,7 @@
 
 - Installer [Starship repo](https://starship.rs/).
 - Dans le fichier ~/.config/starship.toml
+
 ::: details Theme light catppuccin latte
 "$schema" = 'https://starship.rs/config-schema.json'
 
@@ -153,9 +154,12 @@ crust = "#dce0e8"
 ## Install mandatory tools
 
 - Node JS
+- Mise
 - Git
+- Fzf
 
 ## Git config
 
 Application React avec vite sur [gitHub page](https://fabcre.github.io/React-Git-Help/).
+
 
