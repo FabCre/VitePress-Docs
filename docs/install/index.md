@@ -1,157 +1,160 @@
 ## Install fonts
 
-- Victor Mono
+- Operator mono nerd font
 - Télécharger les patched fonts sur [NerdFonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts)
 - Installer ces fonts pour tous les utilisateurs afin qu'elles soient disponible partout
 
 ## Starship theme
 
 - Installer [Starship repo](https://starship.rs/).
+- Dans le fichier ~/.config/starship.toml
+::: Theme light catppuccin latte
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](red)\
+$os\
+$username\
+[](bg:peach fg:red)\
+$directory\
+[](bg:yellow fg:peach)\
+$git_branch\
+$git_status\
+[](fg:yellow bg:green)\
+$rust\
+$golang\
+$nodejs\
+$java\
+$python\
+[](fg:green bg:sapphire)\
+[](fg:sapphire bg:lavender)\
+$time\
+[ ](fg:lavender)\
+$cmd_duration\
+$line_break\
+$character"""
+
+palette = 'catppuccin_latte'
+
+[os]
+disabled = false
+style = "bg:red fg:crust"
+
+[os.symbols]
+Ubuntu = ""
+Linux = ""
+Debian = ""
+
+[username]
+show_always = true
+style_user = "bg:red fg:crust"
+style_root = "bg:red fg:crust"
+format = '[ $user]($style)'
+
+[directory]
+style = "bg:peach fg:crust"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:yellow"
+format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
+
+[git_status]
+style = "bg:yellow"
+format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[java]
+symbol = " "
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:sapphire"
+format = '[[ $symbol( $context) ](fg:crust bg:sapphire)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:lavender"
+format = '[[ $time ](fg:crust bg:lavender)]($style)'
+
+[line_break]
+disabled = true
+
+[character]
+disabled = false
+success_symbol = '[❯](bold fg:green)'
+error_symbol = '[❯](bold fg:red)'
+vimcmd_symbol = '[❮](bold fg:green)'
+vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
+vimcmd_replace_symbol = '[❮](bold fg:lavender)'
+vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+[cmd_duration]
+show_milliseconds = true
+format = " in $duration "
+style = "bg:lavender"
+disabled = false
+show_notifications = true
+min_time_to_notify = 45000
+
+[palettes.catppuccin_latte]
+rosewater = "#dc8a78"
+flamingo = "#dd7878"
+pink = "#ea76cb"
+mauve = "#8839ef"
+red = "#d20f39"
+maroon = "#e64553"
+peach = "#fe640b"
+yellow = "#df8e1d"
+green = "#40a02b"
+teal = "#179299"
+sky = "#04a5e5"
+sapphire = "#209fb5"
+blue = "#1e66f5"
+lavender = "#7287fd"
+text = "#4c4f69"
+subtext1 = "#5c5f77"
+subtext0 = "#6c6f85"
+overlay2 = "#7c7f93"
+overlay1 = "#8c8fa1"
+overlay0 = "#9ca0b0"
+surface2 = "#acb0be"
+surface1 = "#bcc0cc"
+surface0 = "#ccd0da"
+base = "#eff1f5"
+mantle = "#e6e9ef"
+crust = "#dce0e8"
+:::
 
 ## Install mandatory tools
 
 - Node JS
 - Git
 
-## Neo Vim
-
-::: tip Windows
-
-- Installer NeoVim en suivant les instructions du repo [NeoVim](https://github.com/neovim/neovim/wiki/Installing-Neovim#windows) 
-
-- La configuration doit être dans "AppData", il faut créer le fichier pour ensuite y mettre la config. La command suivante permet de créer le fichier et le "init.vim" pour une configuration standard.
-
-``` Powershell
-mkdir ~\AppData\Local\nvim New-Item -Path ~\AppData\Local\nvim\init.vim -Type File
-```
-
-- Pour éditer le fichier de configuration standard, taper ":edit $MYVIMRC".
-:::
-
-::: info WSL 2
-
-- Supprimer neovim s'il est déjà existant sur le sub system
-
-``` shell
-sudo apt remove --purge neovim
-sudo apt autoremove
-```
-
-- Télécharger nvim.appimage (voir le numéro de version sur le repo gitHub releases)
-
-``` shell
-cd ~
-wget https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage
-```
-
-- Déplacer le fichier appimage et le rendre runnable
-
-``` shell
-sudo mv nvim.appimage /usr/local/bin
-sudo chmod +x /usr/local/bin/nvim.appimage
-```
-
-- Rendre les commandes "vi", "vim" et "ex" pour exécuter neovim
-``` shell
-CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage
-sudo update-alternatives --install /usr/bin/ex v "${CUSTOM_NVIM_PATH}" 110
-sudo update-alternatives --install /usr/bin/vi vi "${CUSTOM_NVIM_PATH}" 110
-sudo update-alternatives --install /usr/bin/vim vim "${CUSTOM_NVIM_PATH}" 110
-```
-:::
-
-::: tip Linux 
-
-Créer les fichiers dans .config (/home/"user"/.config/nvim/)
-
-Lancer le :checkhealth
-
-Installer ce qui manque dans le check (nodejs, ruby, python)
-
-pacman -S ripgrep
-
-pacman -S fd
-:::
-
 ## Git config
 
 Application React avec vite sur [gitHub page](https://fabcre.github.io/React-Git-Help/).
-
-## Powershell & profile
-
-- Installer Starship
-
-- Emplacement du fichier profile "C:\Users\USERNAME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
-
-- Pour connaitre l'emplacement du fichier : "$PROFILE", pour le lire "cat $PROFILE".
-
-::: details PowerShell profile contenu du fichier
-function Go-To-Docs {
-    Set-Location -Path "~\Documents\Ressources-Techniques\VitePress-Docs"
-}
-
-function Go-Ressources {
-    Set-Location -Path "~\Documents\Ressources-Techniques\"
-}
-
-function Nvim-Here {
-    nvim .
-}
-
-Invoke-Expression (&starship init powershell)
-:::
-
-## Zsh & .zshrc
-
-- Emplacement des fichiers "/home/user/".
-
-- Installer Zsh 
-
-``` shell
-# Debian
-sudo apt install zsh
-# Arch
-sudo pacman -S zsh
-```
-
-- Change le shell par défaut
-
-``` shell
-chsh -s $(which zsh)
-``` 
-
-- Vérifier le shell par défaut
-
-``` shell
-which $SHELL
-dois être => /usr/bin/zsh
-```
-
-- Ajouter les plugins, cloner les plugins depuis les repo git puis les déplcer dans le répertoire "/usr/share/zsh/plugins/PLUGINS_NAME/"
-    - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-    - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-
-- Ajouter dans le .zshrc les plugins comme dans la configuration ci dessous.
-
-::: details zshrc contenu du fichier
-autoload -U promptinit; promptinit
-
-eval "$(starship init zsh)"
-
-function example () {
-    cd "/home/user/"
-}
-
-function example2 () {
-    cd "/home/user/ && ls -a
-}
-
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt appendhistory
-
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-:::
