@@ -8,7 +8,7 @@
 
 - Installer [Starship repo](https://starship.rs/).
 - Dans le fichier ~/.config/starship.toml
-::: Theme light catppuccin latte
+::: details Theme light catppuccin latte
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
@@ -158,3 +158,4 @@ crust = "#dce0e8"
 ## Git config
 
 Application React avec vite sur [gitHub page](https://fabcre.github.io/React-Git-Help/).
+
